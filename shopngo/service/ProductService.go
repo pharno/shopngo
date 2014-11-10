@@ -1,4 +1,4 @@
-package shopngo
+package service
 
 type ProductService struct {
 	first  string
