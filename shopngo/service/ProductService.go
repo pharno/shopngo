@@ -19,3 +19,11 @@ func (this *ProductService) GetProduct(id int) string {
 		return "not found"
 	}
 }
+
+func getProductService() *ProductService {
+	var Productservice = &ProductService{}
+	Productservice.Init()
+	return Productservice
+}
+
+var Productservice = getProductService()
